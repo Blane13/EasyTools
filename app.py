@@ -4,7 +4,7 @@ from easyfuncs import download_from_url, CachedModels
 os.makedirs("dataset",exist_ok=True)
 model_library = CachedModels()
 
-with gr.Blocks(title="🔊",theme=gr.themes.Base(primary_hue="rose",neutral_hue="zinc")) as app:
+with gr.Blocks(title="Easy",theme="Hev832/soft")) as app:
     with gr.Row():
         gr.HTML("<img  src='file/a.png' alt='image'>")
     with gr.Tabs():
@@ -74,9 +74,9 @@ with gr.Blocks(title="🔊",theme=gr.themes.Base(primary_hue="rose",neutral_hue=
                     with gr.Accordion("General Settings", open=False):
                         f0method0 = gr.Radio(
                             label="Method",
-                            choices=["pm", "harvest", "crepe", "rmvpe"]
+                            choices=[ "harvest", "crepe", "rmvpe"]
                             if config.dml == False
-                            else ["pm", "harvest", "rmvpe"],
+                            else [ "harvest", "rmvpe"],
                             value="rmvpe",
                             interactive=True,
                         )
