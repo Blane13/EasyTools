@@ -4,7 +4,7 @@ from easyfuncs import download_from_url, CachedModels
 os.makedirs("dataset",exist_ok=True)
 model_library = CachedModels()
 
-with gr.Blocks(title="Easy",theme="Hev832/soft")) as app:
+with gr.Blocks(title="Easy",theme="Hev832/soft") as app:
     with gr.Row():
         gr.HTML("<img  src='file/a.png' alt='image'>")
     with gr.Tabs():
